@@ -2,8 +2,21 @@
 /* block
 of comments
 */
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+    margin-bottom: .5em;
+}
 
+textarea, input{
+    margin-bottom: .5em;
+}
 
+form button{
+    padding: .5em;
+}
 
 
 table{

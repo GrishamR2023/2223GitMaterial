@@ -2,8 +2,21 @@
 /* block
 of comments
 */
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+    margin-bottom: .5em;
+}
 
+textarea, input{
+    margin-bottom: .5em;
+}
 
+form button{
+    padding: .5em;
+}
 
 
 table{
@@ -34,6 +47,25 @@ tr:nth-of-type(even){
 /* full screen */
 @media(min-width:1024px){
 /*  embedded styling */
+    form{
+        width: 60%;
+        display: grid;
+        grid-template-columns: 12em 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em; gap:1em;
+
+    }
+
+    label{
+        text-align: right;
+    }
+
+    /*specifically buttons that can submit*/
+    button[submit]{
+        grid-column: 2;
+        width: 9em;
+    }
+
 body{
     margin: 0;
     background-color: #3f2860;
@@ -174,6 +206,15 @@ footer{
     padding-bottom: 1em;
 }
 
+#storehero{
+    background-image: url("images/store.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 300px;
+    padding-bottom: 1em;
+}
+
 #mobile{
     display: none;
 }
@@ -207,6 +248,24 @@ section{
 /* half screen */
 @media(min-width:600px){
     /*  embedded styling */
+    form{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 12em 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em; gap:1em;
+
+    }
+
+    label{
+        text-align: right;
+    }
+
+    /*specifically buttons that can submit*/
+    button[submit]{
+        grid-column: 2;
+        width: 9em;
+    }
     body{
         margin: 0;
         background-color: #3f2860;
