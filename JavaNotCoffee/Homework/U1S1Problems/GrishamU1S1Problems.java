@@ -25,6 +25,10 @@ public class GrishamU1S1Problems {
         System.out.println("The energy needed is " + total + ".");
         ui.close();
     }
+
+
+
+    
     static void three() {
         System.out.println("FUTURE INVESTMENTS --- ");
         Scanner ui = new Scanner(System.in);
@@ -43,6 +47,10 @@ public class GrishamU1S1Problems {
         System.out.println("Future value is  $" + foxtrot + ".");
         ui.close();
     }
+
+
+
+
     static void four() {
         System.out.println("DRIVING COST --- ");
         Scanner ui = new Scanner(System.in);
