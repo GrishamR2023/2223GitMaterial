@@ -35,8 +35,12 @@ public class BasicMathQuiz {
                     System.out.printf("What is %d - %d? ",num1,num2);
                     answer = (double)num1-num2;
                 }
+                System.out.println("Be sure to round to the nearest 4th decimal.");
+                answer = Math.round(answer * 100.0) / 100.0;
                 //check to see if the user answered the expression correctly
                 input = ui.nextDouble();
+                input = Math.round(input * 100.0) / 100.0;
+                System.out.println(input);
                 if(input==answer){
                     System.out.println("Great job! That's correct.");
                     points+=1;
@@ -50,7 +54,10 @@ public class BasicMathQuiz {
                 num2 = rand.nextInt(100)+1; //1-100
             }
             if(streak < 8){
-                System.out.println("Your score was " + points + "Out of 10. That is not 80%. Try again.");
+                System.out.println("Your score was " + points + " out of 10. That is not 80%. Try again.");
+                points = 0;
+                streak = 0;
+
             }
             else{
                 System.out.println("Your score was " + points + " out of 10. Good job, that is at least 80%!!!");
