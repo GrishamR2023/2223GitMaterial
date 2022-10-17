@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Scifi</string>
+    <string name="title">Welcome to Scifi Name Generator</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name" />
+    <string name="lastHint">Last Name</string>
+    <string name="lastText">Last Name:</string>
+    <string name="output" />
+</resources>
