@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IntentExample</string>
+    <string name="firstUI">Open Second Activity</string>
+    <string name="firstBTN">enter something...</string>
+</resources>
