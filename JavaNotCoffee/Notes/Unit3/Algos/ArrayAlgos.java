@@ -3,16 +3,16 @@ public class ArrayAlgos{
          double[] test = {12,7,13,8,4.0,3,72};
          double[] test2 = {120,57,1.3,8.5,0,3,7};
          
-        //  System.out.print("Sum: %f",sum(test));       
-        //  System.out.print("Ave: %f",ave(test));
+         System.out.print("Sum: %f",sum(test));       
+         System.out.print("Ave: %f",ave(test));
          System.out.printf("Min: %f",min(test));
-        //  System.out.print("Max: %f",max(test));
+         System.out.print("Max: %f",max(test));
          System.out.println();
-         //returns the index if found, if not, -1
-        //  System.out.println("Find: %f",find(test,8));
+        //  returns the index if found, if not, -1
+         System.out.println("Find: %f",find(test,8));
          System.out.println("Reverse: "+printArray(reverse(test)));
-        //  System.out.println("Sorted: "+printArray(sort(test)));
-        //  System.out.println("Merge: "+printArray(merge(test,test2)));
+         System.out.println("Sorted: "+printArray(sort(test)));
+         System.out.println("Merge: "+printArray(merge(test,test2)));
     }
     public static double[] reverse(double[] arr) {
         double[] sorted = new double[arr.length];
@@ -65,7 +65,15 @@ public class ArrayAlgos{
         return total;
     }
 
-
+    public static double max(double[] arr){
+        double gnoat=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] > gnoat){
+                gnoat = arr[i];
+            }
+        }
+        return gnoat;
+   }
 
 
 

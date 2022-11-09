@@ -7,159 +7,158 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        android:text="@string/output"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271" />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="4dp"
-        android:layout_marginStart="10dp"
 
 
-        android:layout_marginEnd="10dp"
         app:columnCount="4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:rowCount="4">
+        app:layout_constraintTop_toBottomOf="@+id/output"
+        app:rowCount="5"
+        tools:layout_editor_absoluteX="4dp">
 
         <Button
-            android:id="@+id/button19"
+            android:id="@+id/seven"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7"
+            android:text="@string/sevenBTN"
             app:layout_column="0"
             app:layout_row="0" />
 
         <Button
-            android:id="@+id/button20"
+            android:id="@+id/eight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="8"
+            android:text="@string/eightBTN"
             app:layout_column="1"
             app:layout_row="0" />
 
         <Button
-            android:id="@+id/button21"
+            android:id="@+id/nine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="9"
+            android:text="@string/nineBTN"
             app:layout_column="2"
             app:layout_row="0" />
 
         <Button
-            android:id="@+id/button22"
+            android:id="@+id/divide"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:text="/"
+            android:text="@string/divideBTN"
             app:layout_column="3"
             app:layout_row="0" />
 
         <Button
-            android:id="@+id/button23"
+            android:id="@+id/four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4"
+            android:text="@string/fourBTN"
             app:layout_column="0"
             app:layout_row="1" />
 
         <Button
-            android:id="@+id/button24"
+            android:id="@+id/five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5"
+            android:text="@string/fiveBTN"
             app:layout_column="1"
             app:layout_row="1" />
 
         <Button
-            android:id="@+id/button25"
+            android:id="@+id/six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6"
+            android:text="@string/sixBTN"
             app:layout_column="2"
             app:layout_row="1" />
 
         <Button
-            android:id="@+id/button26"
+            android:id="@+id/multiply"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:text="x"
+            android:text="@string/multiplyBTN"
             app:layout_column="3"
             app:layout_row="1" />
 
         <Button
-            android:id="@+id/button27"
+            android:id="@+id/one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
+            android:text="@string/oneBTN"
             app:layout_column="0"
             app:layout_row="2" />
 
         <Button
-            android:id="@+id/button28"
+            android:id="@+id/two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2"
+            android:text="@string/twoBTN"
             app:layout_column="1"
             app:layout_row="2" />
 
         <Button
-            android:id="@+id/button29"
+            android:id="@+id/three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3"
+            android:text="@string/threeBTN"
             app:layout_column="2"
             app:layout_row="2" />
 
         <Button
-            android:id="@+id/button30"
+            android:id="@+id/add"
             android:layout_width="129dp"
             android:layout_height="wrap_content"
-            android:text="+"
+            android:text="@string/addBTN"
             app:layout_column="3"
             app:layout_row="2" />
 
         <Button
-            android:id="@+id/button31"
+            android:id="@+id/clear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="C"
+            android:text="@string/clearBTN"
             app:layout_column="0"
             app:layout_row="3" />
 
         <Button
-            android:id="@+id/button32"
+            android:id="@+id/zero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
+            android:text="@string/zeroBTN"
             app:layout_column="1"
             app:layout_row="3" />
 
         <Button
-            android:id="@+id/button33"
+            android:id="@+id/equals"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="="
+            android:text="@string/equalsBTN"
             app:layout_column="2"
             app:layout_row="3" />
 
         <Button
-            android:id="@+id/button34"
+            android:id="@+id/minus"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:text="-"
+            android:text="@string/minusBTN"
             app:layout_column="3"
             app:layout_row="3" />
+
     </androidx.gridlayout.widget.GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

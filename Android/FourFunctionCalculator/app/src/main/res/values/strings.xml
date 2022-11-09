@@ -5,4 +5,21 @@
     <string name="subtract">-</string>
     <string name="multiply">x</string>
     <string name="divide">÷</string>
+    <string name="output">Output</string>
+    <string name="sevenBTN">7</string>
+    <string name="eightBTN">8</string>
+    <string name="nineBTN">9</string>
+    <string name="divideBTN">/</string>
+    <string name="fourBTN">4</string>
+    <string name="fiveBTN">5</string>
+    <string name="sixBTN">6</string>
+    <string name="multiplyBTN">x</string>
+    <string name="oneBTN">1</string>
+    <string name="twoBTN">2</string>
+    <string name="threeBTN">3</string>
+    <string name="addBTN">+</string>
+    <string name="clearBTN">C</string>
+    <string name="zeroBTN">0</string>
+    <string name="equalsBTN">=</string>
+    <string name="minusBTN">-</string>
 </resources>

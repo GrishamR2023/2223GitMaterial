@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PizzaPlanet</string>
+    <string name="anchovies">Anchovies</string>
+    <string name="bacon">Bacon</string>
+    <string name="jalepenos">Jalepenos</string>
+    <string name="output">Output</string>
+    <string name="submit">Submit</string>
+    <string name="choose_your_toppings">Choose your toppings</string>
+    <string name="large">Large</string>
+    <string name="medium">Medium</string>
+    <string name="small">Small</string>
+    <string name="choose_your_size">Choose your size</string>
+    <string name="welcome_to_pizza_planet">Welcome to Pizza Planet</string>
+    <string name="piktur">Piktur</string>
+</resources>
