@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6cd4ff"
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -17,28 +19,28 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="hello"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="#FF0000"
-            android:textAlignment="center"
             android:padding="5dp"
-            />
+            android:text="Sci-Fi"
+            android:textAlignment="center"
+            android:textColor="#FFD6E0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/firstLBL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="hello2"
-                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="First Name:"
+                android:textColor="#FFEF9F"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:layout_weight="1"
-                />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/firstTXT"
@@ -46,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:textColorHint="#C1FBA4"
                 android:hint="First Name"
                 android:inputType="text"
                 android:minHeight="20sp"
@@ -57,16 +60,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/lastLBL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="last"
-                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#FFEF9F"
+                android:text="Last Name:"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:layout_weight="1"
-                />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/lastTXT"
@@ -74,7 +78,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="hin2"
+                android:textColorHint="#C1FBA4"
+                android:hint="Last Name"
                 android:inputType="text" />
 
         </LinearLayout>
@@ -83,16 +88,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/cityLBL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFEF9F"
                 android:text="City:"
-                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:layout_weight="1"
-                />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/cityTXT"
@@ -100,6 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:textColorHint="#C1FBA4"
                 android:hint="City"
                 android:inputType="text" />
 
@@ -109,16 +116,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/schoolLBL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFEF9F"
                 android:text="School:"
-                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:layout_weight="1"
-                />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/schoolTXT"
@@ -126,6 +134,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:textColorHint="#C1FBA4"
                 android:hint="School"
                 android:inputType="text" />
 
@@ -135,16 +144,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/BroLBL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFEF9F"
                 android:text="Bro:"
-                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:layout_weight="1"
-                />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/broTXT"
@@ -152,6 +162,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:textColorHint="#C1FBA4"
                 android:hint="Bro"
                 android:inputType="text" />
 
@@ -161,16 +172,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/SisLBL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFEF9F"
                 android:text="Sis:"
-                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:layout_weight="1"
-                />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/sisTXT"
@@ -178,6 +190,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:textColorHint="#C1FBA4"
                 android:hint="Sis"
                 android:inputType="text" />
 
@@ -187,21 +200,19 @@
             android:id="@+id/generator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GENERATE"
-            android:backgroundTint="#005007"
-            />
+            android:textColor="@color/black"
+            android:backgroundTint="#7BF1A8"
+            android:text="GENERATE" />
 
         <TextView
             android:id="@+id/output"
-            android:textStyle="bold"
+            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FFD6E0"
             android:padding="10sp"
-            android:text="output" />
-
-
-
-
+            android:text="output"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
