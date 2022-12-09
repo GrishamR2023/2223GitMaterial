@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
     private Button add, minus, multiply, divide, clear, equals, period;
     private Button zero, one, two, three, four, five, six, seven, eight, nine;
     private TextView output;
-    double num1, num2;
-    String selected;
-    double answer;
+    int num1, num2;
+    int selected;
+    int answer;
     boolean firstDone = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 num1 = 0;
                 num2 = 0;
-                selected = "";
+                selected = 0;
                 answer = 0;
                 output.setText("");
             }
