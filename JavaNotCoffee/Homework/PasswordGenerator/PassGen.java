@@ -43,7 +43,7 @@ public class PassGen{
         for(int i=0;i<placeHolder.length();i++){
             n = r.nextInt(total.length());
             finalPass = finalPass+String.valueOf(total.charAt(n));
-            total = total.replaceFirst(java.util.regex.Matcher.quoteReplacement((String.valueOf(total.charAt(n)))), "");
+            total=total.substring(0, n)+total.substring(n+1, total.length());
             System.out.println(total);
             System.out.println(finalPass);
         }

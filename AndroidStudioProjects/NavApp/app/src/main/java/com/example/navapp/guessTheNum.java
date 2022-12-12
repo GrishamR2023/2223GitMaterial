@@ -16,8 +16,14 @@ public class guessTheNum extends Fragment {
 
     EditText enterNum;
     Button checkNum, generateNum;
-    TextView points, lives, highLow;
-
+    TextView points;
+    TextView lives;
+    TextView highLow;
+    Random randy = new Random();
+    int number = randy.nextInt();
+    int pointsVar = 0;
+    int livesVar = 10;
+    String highLowVar = "";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,11 +39,8 @@ public class guessTheNum extends Fragment {
         highLow = rootView.findViewById(R.id.highLow);
         generateNum = rootView.findViewById(R.id.generateNum);
 
-        Random randy = new Random();
-        final int[] number = {randy.nextInt()};
-        final int[] pointsVar = {0};
-        final int[] livesVar = {10};
-        final String[] highLow = {""};
+
+
 
 
 
@@ -49,10 +52,10 @@ public class guessTheNum extends Fragment {
             }
 
             private void reset() {
-                number[0] = randy.nextInt();
-                pointsVar[0] = 0;
-                livesVar[0] = 10;
-                highLow[0] = "";
+                number = randy.nextInt();
+                pointsVar = 0;
+                livesVar = 10;
+                highLowVar = "";
                 points.setText("0");
                 lives.setText("10");
                 enterNum.setText("");
@@ -71,6 +74,23 @@ public class guessTheNum extends Fragment {
             }
 
             private void checkGuess() {
+                if(enterNum.getText().equals(String.valueOf(number))){
+                    highLow.setText("You Win!!!");
+                    pointsVar = pointsVar+50;
+                    pointsVar = livesVar*5+pointsVar;
+                }
+                else{
+                    if(Integer.parseInt(enterNum.getText().toString()) > number){
+                        highLow.setText("Higher");
+                        livesVar = livesVar-1;
+                        lives.setText(String.valueOf(livesVar));
+                    }
+                    else if(Integer.parseInt(enterNum.getText().toString()) < number){
+                        highLow.setText("Lower");
+                        livesVar = livesVar-1;
+                        lives.setText(String.valueOf(livesVar));
+                    }
+                }
             }
         });
 
